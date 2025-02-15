@@ -50,7 +50,7 @@ Credit card numbers:
 `
 //call the function and log the results
 const result = extractMatches(testStrings);
-console.log('Emails:', result.emails || 'No emails found');
-console.log('URLs:', result.urls || 'No URLs found');
-console.log('Phone Numbers:', result.phoneNumbers || 'No phone numbers found');
-console.log('Credit Card Numbers:', result.creditCards || 'No credit card numbers found');
+console.log('Emails:', result.emails || 'No emails found'); //matches user@example.com and firstname.lastname@company.co.uk
+console.log('URLs:', result.urls || 'No URLs found');//matches https://www.example.com and http://subdomain.example.org/page
+console.log('Phone Numbers:', result.phoneNumbers || 'No phone numbers found');//matches (123) 456-7890, 123-456-7890 and 123.456.7890
+console.log('Credit Card Numbers:', result.creditCards || 'No credit card numbers found');//matches 1234 5678 9012 3456 and 1234-5678-9012-3456
